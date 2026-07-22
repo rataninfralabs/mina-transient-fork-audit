@@ -1,0 +1,22 @@
+{
+  "name": "mina-transient-fork-audit",
+  "version": "1.0.0",
+  "description": "o1js state audit framework for short-range forks under Ouroboros Samasika",
+  "main": "build/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-wasm-modules --es-module-specifier-resolution=node build/src/run_audit.js",
+    "start": "ts-node src/run_audit.ts"
+  },
+  "keywords": ["mina", "o1js", "zkp", "ouroboros-samasika", "blockchain-audit"],
+  "author": "RatanInfra_Labs",
+  "license": "MIT",
+  "dependencies": {
+    "o1js": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
