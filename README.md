@@ -32,6 +32,10 @@ This research presents a non-probabilistic structural verification framework tha
 
 ---
 
+*Maintained by RatanInfra_Labs — Independent Infrastructure & Mathematical Modeling Research.*
+
+---
+
 ## 🚀 Quick Start & Proof Execution
 
 ### Prerequisites
@@ -55,5 +59,3 @@ python audit_fork_topology.py
 npm start
 
 ---
-
-*Maintained by RatanInfra_Labs — Independent Infrastructure & Mathematical Modeling Research.*
