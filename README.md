@@ -15,15 +15,21 @@ This research presents a non-probabilistic structural verification framework tha
 ## 🎯 Architecture Overview & Key Focus Areas
 
 ### 1. Transient Fork Topology Mapping
+
 * Graph-theory representation of temporary block forks under Ouroboros Samasika rules.
+
 * Audits sequence divergences during localized asynchronous network windows.
 
 ### 2. Deterministic Sequence Auditing
+
 * Non-probabilistic verification of account state updates prior to canonical consensus lock-in.
+
 * Isolates sequence irregularities during best-chain selection evaluation.
 
 ### 3. o1js Circuit Integration Model
+
 * Off-chain zero-knowledge proof generation for sequence divergence tracking.
+
 * Verifies external DAG/partial-order state data prior to settlement on Mina.
 
 ---
@@ -31,7 +37,9 @@ This research presents a non-probabilistic structural verification framework tha
 ## 🔬 Target Applications
 
 * **L2 Rollups & Sequencers (e.g., Zeko):** Verifying pre-settlement batch ordering.
+
 * **Archive & Proof Nodes:** Auditing transient sequence health under variable propagation delays.
+
 * **Consensus Boundary Research:** Quantitative modeling of short-range fork dynamics.
 
 ---
@@ -43,20 +51,21 @@ This research presents a non-probabilistic structural verification framework tha
 ## 🚀 Quick Start & Proof Execution
 
 ### Prerequisites
+
 * Node.js v18+
+
 * npm or yarn
+
 * Python 3.8+
 
 ### Execution Commands
-1. Clone the repository
-git clone https://github.com/rataninfralabs/mina-transient-fork-audit.git
-cd mina-transient-fork-audit
 
-2. Install o1js framework dependencies
-npm install
+`git clone [https://github.com/rataninfralabs/mina-transient-fork-audit.git](https://github.com/rataninfralabs/mina-transient-fork-audit.git)`
 
-3. Run Python mathematical topology model
-python3 audit_fork_topology.py
+`cd mina-transient-fork-audit`
 
-4. Run o1js ZK proof verification engine
-npm start
+`npm install`
+
+`python3 audit_fork_topology.py`
+
+`npm start`
