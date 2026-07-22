@@ -8,7 +8,7 @@ Non-probabilistic topological verification & o1js state audit framework for shor
 
 In succinct blockchains operating under Ouroboros Samasika (such as Mina Protocol), state updates rely on recursive zero-knowledge proofs without full historical chain state storage. During short-range fork windows—arising from network latency, propagation jitter, or multi-leader VRF slot assignments—competing block proposals temporarily create divergent state transitions before canonical resolution.
 
-This research presents a non-probabilistic structural verification framework that models transient fork topologies using partial-order graph structures. By evaluating sequence integrity and state transitions during asynchronous execution windows, the framework generates cryptographic proofs of structural convergence. Designed for execution via `o1js`, this layer allows off-chain provers, L2 rollups (e.g., Zeko), and archive nodes to audit pre-settlement sequence integrity without altering Mina’s underlying 22KB core consensus model.
+This research presents a non-probabilistic structural verification framework that models transient fork topologies using partial-order graph structures. By evaluating sequence integrity and state transitions during asynchronous execution windows, the framework generates cryptographic proofs of structural convergence. Designed for execution via o1js, this layer allows off-chain provers, L2 rollups (e.g., Zeko), and archive nodes to audit pre-settlement sequence integrity without altering Mina’s underlying 22KB core consensus model.
 
 ---
 
@@ -43,22 +43,8 @@ This research presents a non-probabilistic structural verification framework tha
 ## 🚀 Quick Start & Proof Execution
 
 ### Prerequisites
-* **Node.js:** v18+
-* **npm** or **yarn**
-* **Python:** 3.8+
+* Node.js v18+
+* npm or yarn
+* Python 3.8+
 
 ### Execution Commands
-
-```bash
-# 1. Clone the repository
-git clone [https://github.com/rataninfralabs/mina-transient-fork-audit.git](https://github.com/rataninfralabs/mina-transient-fork-audit.git)
-cd mina-transient-fork-audit
-
-# 2. Install o1js framework dependencies
-npm install
-
-# 3. Run Python mathematical topology model
-python3 audit_fork_topology.py
-
-# 4. Run o1js ZK proof verification engine
-npm start
