@@ -44,9 +44,8 @@ This research presents a non-probabilistic structural verification framework tha
 
 ### Run the o1js Proof Engine
 
-```bash
 # Clone the repository
-git clone [https://github.com/rataninfralabs/mina-transient-fork-audit.git](https://github.com/rataninfralabs/mina-transient-fork-audit.git)
+git clone https://github.com/rataninfralabs/mina-transient-fork-audit.git
 cd mina-transient-fork-audit
 
 # Install dependencies (o1js framework)
@@ -57,5 +56,4 @@ python audit_fork_topology.py
 
 # Run o1js ZK proof verification runner
 npm start
-
 ---
