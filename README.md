@@ -48,17 +48,15 @@ This research presents a non-probabilistic structural verification framework tha
 * Python 3.8+
 
 ### Execution Commands
-
-```bash
-# 1. Clone the repository
-git clone [https://github.com/rataninfralabs/mina-transient-fork-audit.git](https://github.com/rataninfralabs/mina-transient-fork-audit.git)
+1. Clone the repository
+git clone https://github.com/rataninfralabs/mina-transient-fork-audit.git
 cd mina-transient-fork-audit
 
-# 2. Install o1js framework dependencies
+2. Install o1js framework dependencies
 npm install
 
-# 3. Run Python mathematical topology model
+3. Run Python mathematical topology model
 python3 audit_fork_topology.py
 
-# 4. Run o1js ZK proof verification runner
+4. Run o1js ZK proof verification engine
 npm start
