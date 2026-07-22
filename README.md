@@ -32,4 +32,26 @@ This research presents a non-probabilistic structural verification framework tha
 
 ---
 
+## 🚀 Quick Start & Proof Execution
+
+### Prerequisites
+* Node.js v18+
+* npm / yarn
+
+### Run the o1js Proof Engine
+
+```bash
+# Clone the repository
+git clone [https://github.com/rataninfralabs/mina-transient-fork-audit.git](https://github.com/rataninfralabs/mina-transient-fork-audit.git)
+cd mina-transient-fork-audit
+
+# Install dependencies (o1js framework)
+npm install
+
+# Run Python mathematical model
+python audit_fork_topology.py
+
+# Run o1js ZK proof verification runner
+npm start
+
 *Maintained by RatanInfra_Labs — Independent Infrastructure & Mathematical Modeling Research.*
