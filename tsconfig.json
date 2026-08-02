@@ -5,11 +5,18 @@
     "lib": ["es2022"],
     "declaration": true,
     "outDir": "./build",
-    "rootDir": "./src",
+    "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"]
+  "include": [
+    "circuits/**/*",
+    "index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }
