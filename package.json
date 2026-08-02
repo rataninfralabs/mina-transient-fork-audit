@@ -1,22 +1,38 @@
 {
   "name": "mina-transient-fork-audit",
   "version": "1.0.0",
-  "description": "o1js state audit framework for short-range forks under Ouroboros Samasika",
-  "main": "build/src/index.js",
+  "description": "Non-probabilistic o1js zero-knowledge circuit framework for auditing transient Mina block fork topologies under localized latency.",
+  "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "node --experimental-wasm-modules --es-module-specifier-resolution=node build/src/run_audit.js",
-    "start": "ts-node src/run_audit.ts"
+    "test": "node --experimental-wasm-modules node_modules/jest/bin/jest.js",
+    "audit": "python3 models/audit_fork_topology.py"
   },
-  "keywords": ["mina", "o1js", "zkp", "ouroboros-samasika", "blockchain-audit"],
-  "author": "RatanInfra_Labs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rataninfralabs/mina-transient-fork-audit.git"
+  },
+  "keywords": [
+    "mina-protocol",
+    "o1js",
+    "zero-knowledge",
+    "blockdag",
+    "fork-audit",
+    "depin",
+    "rcr-labs"
+  ],
+  "author": "Amardeep Singh & Aarya (RCR Labs)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rataninfralabs/mina-transient-fork-audit/issues"
+  },
+  "homepage": "https://github.com/rataninfralabs/mina-transient-fork-audit#readme",
   "dependencies": {
     "o1js": "^1.1.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.0",
     "@types/node": "^20.0.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.0.0"
   }
 }
